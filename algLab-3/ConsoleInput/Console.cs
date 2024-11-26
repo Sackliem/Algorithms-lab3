@@ -242,8 +242,8 @@ namespace algLab_3.ConsoleInput
             System.Console.WriteLine(
 @"Примеры. Динамические структуры
 --------------------------------------------------------------------------------------
-1. BFS. Queue
-2. Word reverse. Stack
+1. RoundRobin. Queue
+2. Call Stack. Stack
 3. DFS. Tree 
 4. History. List
 5. Выйти в главное меню.
@@ -264,13 +264,13 @@ namespace algLab_3.ConsoleInput
             {
                 case 1:
                 {
-                    BFS.BFS_execution();
+                    RobinExec.RoundRobin_Execution();
                     ConsoleHelper.ExecuteReturn(ExamplePage, MainPage);
                     break;
                 }
                 case 2:
                 {
-                    ConsoleHelper.ExecuteAlgorithm(value, (sentence) => sentence.ReversingWords(), "Введите предложение: ");
+                    CallStack_exec.CallStack_execution();
                     ConsoleHelper.ExecuteReturn(ExamplePage, MainPage);
                     break;
                 }
